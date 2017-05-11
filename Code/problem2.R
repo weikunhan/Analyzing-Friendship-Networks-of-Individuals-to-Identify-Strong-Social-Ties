@@ -19,7 +19,7 @@ graph_node1 <- induced.subgraph(graph, c(1, neighbors(graph, 1)))
 vertexcolor <- rep("blue", vcount(graph_node1))
 vertexcolor[1] <- "red"
 
-# Plot the graph that consists of node 1
+# Plot information
 plot(graph_node1,
      vertex.size = 5,
      vertex.color = vertexcolor,
