@@ -57,7 +57,6 @@ plot(graph_node1,
      vertex.label = NA,
      vertex.size = 5)
 
-
 # Use Infomap method to find the community structure
 ic <- infomap.community(graph_node1)
 vertexcolor3 <- membership(ic) + 1
