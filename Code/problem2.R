@@ -1,4 +1,4 @@
-# EE 219 Project 1 Problem 2
+# EE232E Project 1 Problem 2
 # Name: Weikun Han, Duzhi Chen
 # Date: 5/8/2017
 # Reference:
