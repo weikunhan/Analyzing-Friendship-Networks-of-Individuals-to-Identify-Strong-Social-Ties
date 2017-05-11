@@ -43,7 +43,7 @@ cat("-------------------------Processing Finshed 2------------------------------
 # Use degree fucntion to find a numeric vector of the same length as argument v
 degree <- degree(graph)
 
-# Plot the degree distributions
+# Plot infomation
 h <- hist(degree,
           breaks = seq(-0.5, by = 1 , length.out = max(degree) + 2),
           freq = FALSE,
@@ -62,7 +62,7 @@ y <- h$density[1:max(degree) + 1]
 # Create model to fit a curve on it
 model = nls(y ~ I(exp(1)^(a + b * x)), start = list(a = 0, b = 0))
 
-# Plot the curve to fit on the degree distributions
+# Plot information
 plot(data.frame(x=h$mids, y=h$density),
      type = "o",
      main = "Degree distribution for graph (social circles: Facebook) fit a curve",
