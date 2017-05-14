@@ -30,7 +30,8 @@ for (i in 1:length(degree)) {
 
 # Print information
 cat("-------------------------Processing Finshed 1----------------------------------\n",
-    "The average degree of these core nodes: ", mean(core_degree), "\n",
+    "The number of core nodes (more than 200 neighbors) is: ", length(core_index), "\n",
+    "The average degree of these core nodes is: ", mean(core_degree), "\n",
     "-------------------------------------------------------------------------------\n")
 
 # Create a graph that consists of node 1 and its neighbors and the edges that have
