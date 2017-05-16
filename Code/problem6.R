@@ -62,13 +62,13 @@ for(i in 1:length(core_index)) {
     # Find community structure
     fc <- fastgreedy.community(graph_nodei)
 
+    # Caculate the resulte
     for(j in 1:length(fc)) {
         community_number <- V(graph_nodei)[which(membership(fc) == j)]
         if(length(community_number) > 10) {
             community_number_10up <- c(community_number_10up, j)
         }
     }
-
     for(j in 1:length(community_number_10up)) {
         graph_community <- induced.subgraph(graph_nodei, V(graph_nodei)[which(membership(fc) == community_number_10up[j])])
         average_degree <- c(average_degree, mean(degree(graph_community)) / vcount(graph_community))
