@@ -57,8 +57,8 @@ for(i in 1:length(core_index)) {
         embeddedness <- c(embeddedness, length(mutual_friends))
         core_name <- which(V(graph_nodei)$name == core_index[i])
         node_name <- which(V(graph_nodei)$name == core_neighbors[j])
-        graph_remove_2nodes = delete.vertices(graph_nodei,c(core_name, node_name))
-        dispersion = c(dispersion, distances(graph_remove_2nodes))
+        graph_remove_2nodes <- delete.vertices(graph_nodei,c(core_name, node_name))
+        dispersion <- c(dispersion, distances(graph_remove_2nodes))
     }
 
     # Calculate totol embeddedness and dispersion
