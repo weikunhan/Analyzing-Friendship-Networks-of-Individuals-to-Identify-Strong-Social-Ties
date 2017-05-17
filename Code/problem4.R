@@ -15,7 +15,7 @@ graph <- read.graph(file = file_path, format = "ncol", directed = FALSE)
 
 # Create a graph that only consists of node 1 neighbors and the edges that have
 # both ends within this set of nodes
-graph_remove_node1 = induced.subgraph(graph, neighbors(graph, 1))
+graph_remove_node1 <- induced.subgraph(graph, neighbors(graph, 1))
 
 # Use fast greedy method to find the community structure
 fc <- fastgreedy.community(graph_remove_node1)
