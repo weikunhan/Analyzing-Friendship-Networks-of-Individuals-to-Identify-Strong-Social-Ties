@@ -16,8 +16,8 @@ graph <- read.graph(file = file_path, format = "ncol", directed = FALSE)
 # Initial veriables
 core_index <- numeric(0)
 core_degree <- numeric(0)
-embeddedness_total=numeric(0)
-dispersion_total=numeric(0)
+embeddedness_total <- numeric(0)
+dispersion_total <- numeric(0)
 
 # Use degree fucntion to find a numeric vector of the same length as argument v
 degree <- degree(graph)
