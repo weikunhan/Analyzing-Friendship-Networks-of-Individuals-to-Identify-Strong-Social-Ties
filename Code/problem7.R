@@ -10,14 +10,14 @@ library("igraph")
 # Setup the file path to load data
 file_path <- "~/Documents/project1/gplus/"
 
-# In file path directory, using linux shell to run this line to generate the ego node ID:
+# In file_path directory, using UNIX shell to run this line to generate the ego node ID:
 # >>ls | grep .edges | awk 'BEGIN{FS="."}{print $1}'| sort >> ../gplus_ID.txt
 file_id <- read.table("~/Documents/project1/gplus_ID.txt", numerals = "no.loss")
 
 # Initial veriables
 circle_count <- numeric(0)
 
-# In file path directory, run linux shell script circlescount.sh to run to generate .circlescount file:
+# In file_path directory, run UNIX shell script circlescount.sh to run to generate .circlescount file:
 # >>./circlescount.sh
 for (i in 1:length(file_id$V1)) {
     ego_node_id <- file_id$V1[i]
