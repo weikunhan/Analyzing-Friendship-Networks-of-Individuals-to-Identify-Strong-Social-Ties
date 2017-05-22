@@ -1,4 +1,4 @@
-# Graphs-of-Users-Personal-Friendship-Network
+# Analyzing Friendship Networks of Individuals to Identify Strong Social Ties
 
 -------------------------------------------------------------------------------
 
