@@ -1,4 +1,4 @@
-# Analyzing Friendship Networks of Individuals to Identify Strong Social Ties
+# Analyzing Friendship Networks on Facebook and Google Plus
 
 -------------------------------------------------------------------------------
 
