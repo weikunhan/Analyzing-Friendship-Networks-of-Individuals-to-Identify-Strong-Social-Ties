@@ -1,0 +1,2 @@
+gplus dataset is on website Stanford Network Analysis Project: 
+http://snap.stanford.edu/data/egonets-Gplus.html
