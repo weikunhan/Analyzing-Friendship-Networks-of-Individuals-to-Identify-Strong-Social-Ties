@@ -17,7 +17,8 @@ file_id <- read.table("~/Documents/project1/gplus_ID.txt", numerals = "no.loss")
 # Initial veriables
 circle_count <- numeric(0)
 
-# In file_path directory, run UNIX shell script circlescount.sh to run to generate .circlescount file:
+# In file_path directory, download circlescount.sh and copy it into file_path direcotry. 
+# Next, run UNIX shell script circlescount.sh to run to generate .circlescount file:
 # >>./circlescount.sh
 for (i in 1:length(file_id$V1)) {
     ego_node_id <- file_id$V1[i]
